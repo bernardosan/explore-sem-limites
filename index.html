@@ -1,87 +1,93 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore sem limites</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@600;700;900&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./queries.css" />
+  
+  <script src="https://kit.fontawesome.com/d36b65427e.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+  <header>
+    <div>
+      <img src="./img/image 11969.png" alt="">
+    </div>
 
-    <div class="container">
+    <div class="titulo">
+      <h1>Explore sem limites</h1>
+      <p>Porque o aprendizado é continuo</p>
+      <a href="#my-form" class="arrow"><img src="./img/Vector.png"></a>
+    </div>      
+    
+  </header>
 
-        <section class="hero">
-            <div class="hero-container">
-                <div class="textbox">
-                    <h1 class="hero-title">Explore sem limites</h1>
-                    <p class="hero-description">Porque o aprenzidado é contínuo</p>
-                </div>
-                <img class="hero-arrow" src="imgs/Group 23.svg"/>
-            </div>
-            <img class="hero-img" src="imgs/image 11969.png"/>
-    </section>
-    
-    <!-- <hr class="line"/> -->
-    
-    <section class="motivational">
-        <div class="grid container">
-            <div class="motivational-item">
-                <img class="img-planet" src="imgs/image 11971.png">
-                <div class="motivational-textbox">
-                    <h3 class="motivational-item-title">Não pare nunca</h3>
-                    <p class="motivational-item-desc">
-                        Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
-                    </p>
-                </div>
-            </div>
-            <div class="motivational-item">
-                <img class="img-planet" src="imgs/image 11971.png">
-                <div class="motivational-textbox">
-                    <h3 class="motivational-item-title">Não pare nunca</h3>
-                    <p class="motivational-item-desc">
-                        Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
-                    </p>
-                </div>
-            </div>
-            <div class="motivational-item">
-                <img class="img-planet" src="imgs/image 11971.png">
-                <div class="motivational-textbox">
-                    <h3 class="motivational-item-title">Não pare nunca</h3>
-                    <p class="motivational-item-desc">
-                        Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.
-                    </p>
-                </div>
-            </div>
+  <section>
+    <div class="card">
+      <img src="./img/image 11971.png" alt="">
+      <h2> Não pare nunca</h2>
+      <p>Se você deseja ter sucesso nos estudos, é fundamental que você adote uma mentalidade de "não pare nunca". Estudar de
+        forma consistente e contínua é a chave para o progresso e a conquista de seus objetivos.</p>
+    </div>
+
+    <div class="card">
+      <img src="./img/image 11974.png" alt="">
+      <h2> Só volta</h2>
+      <p>Se você parou ou perdeu o ritmo em alguma atividade ou projeto, saiba que nunca é tarde para recomeçar. Às vezes, as
+      circunstâncias podem mudar, ou podemos nos sentir desmotivados ou sobrecarregados.</p>
+    </div>
+
+    <div class="card">
+      <img src="./img/image 11975.png" alt="">
+      <h2> Siga seu ritmo</h2>
+      <p>Avançar pouco a pouco mantém progresso constante em objetivos, evitando parar ou desistir. Mesmo pequenos passos nos
+      aproximam do destino e motivam a continuidade. Não subestime o poder de cada ação rumo ao objetivo final.</p>
+    </div>
+  </section>
+
+    <form id="my-form" netlify>
+      <fieldset>
+        <div class="fieldset-wrapper">
+          <legend>Entre em contato</legend>
+
+          <div class="input-wrapper">
+            <span class="input-icon">
+              <i class="fa-solid fa-user"></i>
+            </span>
+            <input type="text" id="event-title" required minlength="8" placeholder="Seu Nome">
+          </div>
+
+          <div class="input-wrapper">
+            <span class="input-icon">
+              <i class="fa-solid fa-envelope"></i>
+            </span>
+            <input type="email" id="event-email" placeholder="Email">
+          </div>
+
+          <div class="input-wrapper">
+          <textarea name="" id="event-info" cols="30" rows="10" placeholder="Digite sua mensagem aqui..."></textarea>
+          </div>
         </div>
-    </section>
-    
-    <section class="contact">
-        <div class="contact-form">
-        <h2 class="contact-header">
-            Entre em contato
-        </h2>
-        <div class="input-container" >
-            <img src="imgs/icon-person.svg" />
-            <input type="text" placeholder="Seu Nome"></input>
-        </div>
-        <div class="input-container" >
-            <img src="imgs/icon-email.svg" />
-            <input type="email" placeholder="Email">
-        </div>
-        <div class="input-container">
-            <input type="text" placeholder="Digite sua mensagem aqui...">
-        </div>
-        <button type="submit">
-            Enviar Mensagem
-        </button>
-        
+
+        <button type="submit">Enviar Mensagem</button>
+      </fieldset>
+      <div class="stars">
+        <!-- <img src="./images/stars.svg" /> -->
+      </div>
     </form>
-</section>
 
-</div>
-<footer>
-    <p>&copy; 2023 - Bernardo Santiago de Souza</p>
-</footer>
+  <footer>
+    <p>&copy; 2023 - Rocketseat Explorer</p>
+  </footer>
+
+
 
 </body>
 </html>

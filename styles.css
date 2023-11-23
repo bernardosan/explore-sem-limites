@@ -1,0 +1,230 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  :root{
+    font-size: 62.5%;
+    --text-font: 'Mulish', sans-serif;
+  
+    --white: #ffffff;
+    --light-gray: #f9f4fb;
+    --accent-color: #b52184;
+    --text-base-color: #312d64;
+    --gradient-background: linear-gradient(96.21deg, #343193 0%, #302c63 99.68%);
+  }
+  
+  body{
+    background: var(--light-gray);
+    font-family: var(--text-font);
+  }
+  
+  header{
+    padding: 0 3.4rem 9.3rem 3.2rem;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: auto;
+  }
+  
+  header img {
+    width: 100%;
+  
+    animation-name: topDown;
+    animation-delay: 200ms;
+    animation-duration: 700ms;
+  }
+  
+  .titulo {
+    animation-name: downTop;
+    animation-delay: 200ms;
+    animation-duration: 700ms;
+  }
+  
+  h1 {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    color: var(--accent-color);
+  
+    width: 100%;
+    text-align: center;
+    margin: 2rem 0 0.5rem;
+  }
+  
+  p {
+    font-size: 2.0rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-base-color);
+    text-align: center;
+    margin-bottom: 3.5rem;
+  }
+  
+  .arrow {
+    width: 5.8rem;
+    height: 10.5rem;
+    border: 4px solid var(--accent-color);
+    border-radius: 76rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    transition: filter 300ms;
+  }
+  
+  .arrow img {
+    width: 3rem;
+  }
+  
+  .arrow:hover{
+    filter: brightness(0.7);
+  }
+  
+  section{
+    background: var(--gradient-background);
+    padding: 5.3rem 3.9rem;
+    display: grid;
+    gap: 5rem;
+  }
+  
+  .card {
+    background: var(--white);
+    padding: 2.2rem;
+    border-radius: 2rem;
+  
+    animation-name: topDown;
+    animation-delay: 200ms;
+    animation-duration: 700ms;
+  }
+  
+  .card:hover {
+      cursor: pointer;
+      transform: scale(1.1) ;
+      transition-duration: 700ms;
+  }
+  
+  .card img {
+    width: 8rem;
+    margin-bottom: 3.3rem;
+  
+    animation: rotate 20s linear infinite;
+  }
+
+  
+  .card img:hover {
+    animation-play-state: paused;
+  }
+  
+  .card h2 {
+    font-size: 2.9rem;
+    line-height: 3.6rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    margin-bottom: 2rem;
+  } 
+  
+  .card p {
+    font-size: 1.6rem;
+    line-height: 2rem;
+    font-weight: 600;
+    color: var(--text-base-color);
+    text-align: left;
+    width: 26.5rem;
+    display: block;
+    width: 100%;
+  }
+  
+  #my-form {
+    padding: 7.8rem 3.9rem 6.5rem;
+  }
+  fieldset{
+    border: none;
+  }
+  
+  legend {
+    font-size: 3.2rem;
+    line-height: 4rem;
+    font-weight: 900;
+    color: var(--accent-color);
+    margin-bottom: 4rem;
+  }
+  
+  .input-wrapper{
+    margin-bottom: 2.4rem;
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .input-icon {
+    position: absolute;
+    top: 50%;
+    left: 15px;
+    transform: translateY(-50%);
+  }
+  
+  .input-icon i {
+    font-size: 20px;
+    color: var(--accent-color);
+  }
+  
+
+  input{
+    padding: 1.6rem 1.6rem 1.6rem  4.6rem;
+  }
+
+  textarea{
+    padding: 1.6rem 1.6rem 1.6rem  1.6rem;
+  }
+  
+  input, textarea{
+    width: 100%;
+    border: 0.15rem solid var(--text-base-color);
+    border-radius: 1.6rem;
+    color: var(--text-base-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  
+  input::placeholder, textarea::placeholder{
+    color: var(--text-base-color);
+    font-weight: 600;
+    font-size: 1.6rem;
+  }
+  
+
+
+  
+  button {
+    background: var(--gradient-background);
+    color: var(--white);
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 2.4rem;
+    padding: 1rem 1.6rem;
+    border-radius: 1.6rem;
+    cursor: pointer;
+    transition: filter 200ms;
+    border: none;
+  }
+  
+  button:hover {
+    filter: brightness(0.9);
+  }
+  
+  footer {
+    background: var(--gradient-background);
+    padding:  1.6rem 
+  }
+  
+  footer p{
+    color: var(--white);
+    font-size: 1.9rem;
+    line-height: 2.4rem;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+ 

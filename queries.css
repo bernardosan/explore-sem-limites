@@ -1,0 +1,95 @@
+ /* KEYFRAMES DAS ANIMAÇÕES */
+
+ @keyframes rotate {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes topDown {
+          0% {
+              opacity: 0;
+              transform: translateY(-15px);
+          }
+  
+          100% {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+  
+  @keyframes downTop {
+          0% {
+              opacity: 0;
+              transform: translateY(+15px);
+          }
+  
+          100% {
+              opacity: 1;
+              transform: translateY(0);
+          }
+      }
+  
+  
+  @media (min-width: 1200px) {
+    header {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      justify-content: center;
+      padding: 0 3.9rem 10.3rem;
+      max-height:  83.6rem;
+    }
+  
+    .titulo {
+      margin-top: 15.2rem;
+    }
+  
+    h1{
+      font-size: 5.2rem;
+      line-height: 7.3rem;
+      margin: 0 0 0.8rem;
+    }
+  
+    .titulo p {
+      font-size: 3.1rem;
+      line-height: 4rem;
+      margin-bottom: 17.9rem;
+      letter-spacing:.05rem;
+    }
+  
+    .arrow{
+      margin: 0;
+      justify-self: flex-end;
+  }
+  
+  section{
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6rem;
+      padding: 6.4rem 11.1rem 8rem;
+  }
+  
+  .card{
+    border-radius: 2.4rem;
+  }
+  
+  .card img{
+    width: 9.7rem;
+    margin-bottom: 4rem;
+  }
+  
+  #my-form{
+    background: url(./img/image\ 11976.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: contain;
+  }
+    input, textarea{
+    width: 50%;
+  
+  }
+  }
+  
